@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wind and Solar Powered Charging Station with Anti-Theft System - A student engineering project">
+    <title>Wind & Solar Charging Station</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">EnergyHub</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li class="nav-item"><a href="#components" class="nav-link">Components</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Wind & Solar Powered Charging Station</h1>
+            <p class="hero-subtitle">Sustainable Energy Solution with Advanced Anti-Theft Protection</p>
+            <p class="hero-description">
+                A student engineering project combining renewable energy sources with intelligent security systems 
+                to create an eco-friendly, secure charging infrastructure for the future.
+            </p>
+            <button class="cta-button">Explore the Project</button>
+        </div>
+        <div class="hero-background">
+            <div class="wind-turbine"></div>
+            <div class="solar-panel"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About the Project</h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Project Overview</h3>
+                    <p>
+                        This innovative project demonstrates the integration of wind and solar energy harvesting 
+                        technologies with a modern anti-theft security system. The charging station is designed to 
+                        provide sustainable power while protecting devices from theft through advanced monitoring 
+                        and alert mechanisms.
+                    </p>
+                    
+                    <h3>Objectives</h3>
+                    <ul class="objectives-list">
+                        <li>Develop a hybrid renewable energy charging system combining wind and solar power</li>
+                        <li>Implement an intelligent anti-theft mechanism with real-time alerts</li>
+                        <li>Create a user-friendly monitoring interface with LCD display</li>
+                        <li>Demonstrate sustainable energy solutions for modern infrastructure</li>
+                        <li>Provide secure and accessible charging for public use</li>
+                    </ul>
+                </div>
+
+                <div class="importance-card">
+                    <h3>Why Renewable Energy Matters</h3>
+                    <p>
+                        Renewable energy is crucial for sustainable development. Solar and wind power represent 
+                        clean, inexhaustible energy sources that reduce carbon emissions and environmental impact. 
+                        By integrating these technologies into everyday infrastructure like charging stations, 
+                        we accelerate the transition to a sustainable future.
+                    </p>
+                    <div class="importance-stats">
+                        <div class="stat">
+                            <span class="stat-number">80%</span>
+                            <span class="stat-label">Carbon Reduction</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">∞</span>
+                            <span class="stat-label">Renewable</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🌬️</div>
+                    <h3>Wind & Solar Hybrid</h3>
+                    <p>
+                        Dual energy harvesting system that combines wind turbine and solar panel technology 
+                        to maximize power generation throughout the day and night.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Anti-Theft System</h3>
+                    <p>
+                        Advanced security mechanism with infrared sensors and keypad authentication to prevent 
+                        unauthorized access and device theft.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>GSM Alert Notification</h3>
+                    <p>
+                        Real-time SMS notifications via SIM800L GSM module alert users and administrators 
+                        of any suspicious activity or security breaches.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>LCD Monitoring</h3>
+                    <p>
+                        16x2 LCD display with I2C interface provides real-time system status, battery level, 
+                        and operational parameters at a glance.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>Smart Control</h3>
+                    <p>
+                        Arduino-based intelligent control system manages power distribution, security protocols, 
+                        and user interactions seamlessly.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔋</div>
+                    <h3>Efficient Power Management</h3>
+                    <p>
+                        LM2596 step-down converter ensures optimal voltage regulation and efficient power 
+                        distribution to connected devices.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            
+            <div class="process-flow">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Energy Harvesting</h3>
+                    <p>
+                        Wind turbine and solar panel continuously harvest renewable energy from the environment 
+                        and convert it to electrical power.
+                    </p>
+                </div>
+
+                <div class="flow-arrow">→</div>
+
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Power Regulation</h3>
+                    <p>
+                        LM2596 step-down converter regulates voltage to safe levels and charges the battery 
+                        storage system efficiently.
+                    </p>
+                </div>
+
+                <div class="flow-arrow">→</div>
+
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>User Authentication</h3>
+                    <p>
+                        Users authenticate via keypad entry. IR sensors detect device placement and verify 
+                        authorized access before charging begins.
+                    </p>
+                </div>
+
+                <div class="flow-arrow">→</div>
+
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Charging & Monitoring</h3>
+                    <p>
+                        Device charges safely while LCD display shows real-time status. Relay module controls 
+                        power delivery with precision.
+                    </p>
+                </div>
+
+                <div class="flow-arrow">→</div>
+
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h3>Security Alert</h3>
+                    <p>
+                        If unauthorized access is detected, IR sensors trigger GSM module to send instant SMS 
+                        alerts to registered users.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Components Section -->
+    <section id="components" class="components">
+        <div class="container">
+            <h2 class="section-title">System Components</h2>
+            
+            <div class="components-grid">
+                <div class="component-card">
+                    <div class="component-header">
+                        <h3>Arduino UNO</h3>
+                        <span class="component-type">Microcontroller</span>
+                    </div>
+                    <p>
+                        The brain of the system. Arduino UNO processes sensor inputs, controls relays, 
+                        manages GSM communication, and orchestrates all system operations.
+                    </p>
+                    <ul class="specs">
+                        <li>16 MHz Clock Speed</li>
+                        <li>14 Digital I/O Pins</li>
+                        <li>6 Analog Inputs</li>
+                        <li>32 KB Flash Memory</li>
+                    </ul>
+                </div>
+
+                <div class="component-card">
+                    <div class="component-header">
+                        <h3>Wind Turbine</h3>
+                        <span class="component-type">Energy Source</span>
+                    </div>
+                    <p>
+                        Converts wind energy into electrical power. Operates continuously during windy 
+                        conditions and provides consistent power generation.
+                    </p>
+                    <ul class="specs">
+                        <li>Vertical Axis Design</li>
+                        <li>Low RPM Operation</li>
+                        <li>High Torque Output</li>
+                        <li>Weather Resistant</li>
+                    </ul>
+                </div>
+
+                <div class="component-card">
+                    <div class="component-header">
+                        <h3>Solar Panel</h3>
+                        <span class="component-type">Energy Source</span>
+                    </div>
+                    <p>
+                        Photovoltaic panel that converts sunlight into electrical power. Primary energy 
+                        source during daytime hours with high efficiency.
+                    </p>
+                    <ul class="specs">
+                        <li>Monocrystalline Cells</li>
+                        <li>High Efficiency Rating</li>
+                        <li>Weather Sealed</li>
+                        <li>Long Lifespan</li>
+                    </ul>
+                </div>
+
+                <div class="component-card">
+                    <div class="component-header">
+                        <h3>SIM800L GSM Module</h3>
+                        <span class="component-type">Communication</span>
+                    </div>
+                    <p>
+                        Enables SMS and cellular communication. Sends real-time alerts to users when 
+                        security threats are detected.
+                    </p>
+                    <ul class="specs">
+                        <li>Dual-Band GSM/GPRS</li>
+                        <li>SMS Support</li>
+                        <li>Low Power Consumption</li>
+                        <li>Global Coverage</li>
+                    </ul>
+                </div>
+
+                <div class="component-card">
+                    <div class="component-header">
+                        <h3>16x2 LCD with I2C</h3>
+                        <span class="component-type">Display</span>
+                    </div>
+                    <p>
+                        Character LCD display with I2C interface for easy integration. Shows system status, 
+                        battery level, and operational information.
+                    </p>
+                    <ul class="specs">
+                        <li>16 Characters × 2 Lines</li>
+                        <li>I2C Interface</li>
+                        <li>Backlight Support</li>
+                        <li>Easy Integration</li>
+                    </ul>
+                </div>
+
+                <div class="component-card">
+                    <div class="component-header">
+                        <h3>Relay Module</h3>
+                        <span class="component-type">Control</span>
+                    </div>
+                    <p>
+                        Controls power delivery to charging ports. Enables safe switching of high-power 
+                        circuits under Arduino control.
+                    </p>
+                    <ul class="specs">
+                        <li>High Current Rating</li>
+                        <li>Multiple Channels</li>
+                        <li>Isolated Control</li>
+                        <li>Long Lifespan</li>
+                    </ul>
+                </div>
+
+                <div class="component-card">
+                    <div class="component-header">
+                        <h3>Keypad</h3>
+                        <span class="component-type">Input</span>
+                    </div>
+                    <p>
+                        Membrane keypad for user authentication and system control. Allows users to enter 
+                        PIN codes and access the charging station.
+                    </p>
+                    <ul class="specs">
+                        <li>4×4 Matrix Layout</li>
+                        <li>Durable Membrane</li>
+                        <li>Easy Integration</li>
+                        <li>Low Cost</li>
+                    </ul>
+                </div>
+
+                <div class="component-card">
+                    <div class="component-header">
+                        <h3>IR Sensor</h3>
+                        <span class="component-type">Security</span>
+                    </div>
+                    <p>
+                        Infrared sensor detects unauthorized access and device placement. Triggers security 
+                        alerts when suspicious activity is detected.
+                    </p>
+                    <ul class="specs">
+                        <li>Adjustable Sensitivity</li>
+                        <li>Fast Response Time</li>
+                        <li>Wide Detection Range</li>
+                        <li>Reliable Detection</li>
+                    </ul>
+                </div>
+
+                <div class="component-card">
+                    <div class="component-header">
+                        <h3>LM2596 Step-down</h3>
+                        <span class="component-type">Power Management</span>
+                    </div>
+                    <p>
+                        DC-DC step-down converter regulates variable input voltage to stable output voltage. 
+                        Ensures efficient power distribution and device protection.
+                    </p>
+                    <ul class="specs">
+                        <li>Wide Input Range</li>
+                        <li>Adjustable Output</li>
+                        <li>High Efficiency</li>
+                        <li>Thermal Protection</li>
+                    </ul>
+                </div>
+
+                <div class="component-card">
+                    <div class="component-header">
+                        <h3>Battery</h3>
+                        <span class="component-type">Energy Storage</span>
+                    </div>
+                    <p>
+                        Rechargeable battery stores harvested energy for use during low wind/solar conditions. 
+                        Provides consistent power supply to the system.
+                    </p>
+                    <ul class="specs">
+                        <li>High Capacity</li>
+                        <li>Long Cycle Life</li>
+                        <li>Safe Chemistry</li>
+                        <li>Fast Charging</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Project Gallery</h2>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <p>Hybrid Energy System Assembly</p>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <p>Solar Panel Integration</p>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <p>Wind Turbine Component</p>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                    <p>Control Circuit Board</p>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                    <p>Security System Module</p>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
+                    <p>Complete Prototype</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact & Information</h2>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Project Details</h3>
+                    <div class="info-item">
+                        <span class="info-label">Student Name:</span>
+                        <span class="info-value">Engineering Student</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Course:</span>
+                        <span class="info-value">Computer Engineering</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Email:</span>
+                        <span class="info-value">student@university.edu</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Project Type:</span>
+                        <span class="info-value">Renewable Energy & IoT Security</span>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <h3>Send a Message</h3>
+                    
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">Send Message</button>
+                    <p class="form-note">Note: This is a frontend form. In production, implement backend handling.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About This Project</h4>
+                    <p>
+                        A comprehensive student engineering project demonstrating renewable energy integration 
+                        with modern security systems.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Technologies Used</h4>
+                    <ul>
+                        <li>Arduino UNO</li>
+                        <li>Renewable Energy</li>
+                        <li>IoT Security</li>
+                        <li>GSM Communication</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Wind & Solar Charging Station Project. All rights reserved.</p>
+                <p>Built with <span class="heart">❤️</span> for sustainable energy solutions</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
